@@ -31,7 +31,7 @@
         <!-- 可以自定义servlet.xml配置文件的位置和名称， 默认为WEB-INF目录下，名称为[<servlet-name>]-servlet.xml，如spring-servlet.xml -->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value> classpath:spring/spring-config.xml</param-value>
+            <param-value>classpath:spring/spring-config.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -55,7 +55,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value> classpath:spring/spring-config.xml</param-value>
+        <param-value>classpath:spring/spring-config.xml</param-value>
     </context-param>
     <!-- 欢迎页面-->
     <welcome-file-list>
@@ -63,8 +63,8 @@
     </welcome-file-list>
     <!--404错误展示页面，可自行配置-->
     <error-page>
-    <error-code>404</error-code>
-    <location>/WEB-INF/views/404.jsp</location>
+        <error-code>404</error-code>
+        <location>/WEB-INF/views/404.jsp</location>
     </error-page>
     <!--设置session失效时间为30分钟 -->
     <session-config>
