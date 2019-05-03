@@ -7,9 +7,16 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+
+    <meta name="viewport"
+          content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <head>
         <title>登录页面</title>
-        <meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -42,10 +49,12 @@
                                         <input class="form-control" placeholder="用户名：admin" name="username" autofocus>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" placeholder="密码：1234" name="password" type="password" value="">
+                                        <input class="form-control" placeholder="密码：1234" name="password"
+                                               type="password" value="">
                                     </div>
 
-                                    <a href="javascript:void(0)" class="btn btn-lg btn-success btn-block" id="login-btn">登录</a>
+                                    <a href="javascript:void(0)" class="btn btn-lg btn-success btn-block"
+                                       id="login_btn">登录</a>
                                 </fieldset>
                             </form>
                         </div>
@@ -57,16 +66,16 @@
 
         <script type="text/javascript">
             $(function () {
-                $("#login-btn").click(function () {
+                $("#login_btn").click(function () {
                     $.ajax({
-                        url:"/ssmalpha/dologin",
-                        type:"POST",
-                        data:$("login-form").serialize(),
-                        success:function (result) {
+                        url: "/ssmalpha/dologin",
+                        type: "POST",
+                        data: $("#login_form").serialize(),
+                        success: function (result) {
 
-                            if (result.code == 100){
+                            if (result.code == 100) {
                                 window.location.href = "/ssmalpha/main";
-                            }else {
+                            } else {
                                 alert(result.extendInfo.login_error);
                             }
                         }

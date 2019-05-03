@@ -11,6 +11,7 @@
         <title>XXX公司人力资源管理系统后台</title>
     </head>
     <body>
-        
+        <%--导航条--%>
+        <%@include file="./common/head.jsp"%>
     </body>
 </html>
