@@ -13,5 +13,7 @@
     <body>
         <%--导航条--%>
         <%@include file="./common/head.jsp"%>
+
+        <%@include file="./common/foot.jsp"%>
     </body>
 </html>
