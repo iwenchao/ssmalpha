@@ -7,10 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>SSMDemo</title>
-</head>
-<body>
-<h1 style="text-align: center">这是我的第一个基于SSM框架的javaWeb项目</h1>
-</body>
+    <head>
+        <title>SSMAlpha</title>
+    </head>
+    <body>
+        <h1 style="text-align: center">这是我的第一个基于SSM框架的javaWeb项目</h1>
+    </body>
 </html>
